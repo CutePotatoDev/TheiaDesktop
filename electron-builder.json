@@ -1,0 +1,32 @@
+{
+    "electronDist": "node_modules/electron/dist",
+    "productName": "Theia",
+    "appId": "theia",
+
+    "asar": true,
+    "directories": {
+        "buildResources": "resources"
+    },
+    "files": [
+        "src-gen/**/*",
+        "lib/**/*",
+        "node_modules/**/*",
+        "package.json"
+    ],
+    "compression": "store",
+
+    "linux": {
+        "target": [
+            {
+                "target": "tab.gz",
+                "arch": ["armv7l"]
+            }
+        ],
+        "category": "Development",
+        "icon": "resources/icons"
+    },
+
+    "publish": {
+        "provider": "github"
+    }
+}

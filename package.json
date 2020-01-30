@@ -1,0 +1,44 @@
+{
+    "private": true,
+    "name": "theia",
+    "version": "0.14.0",
+    "description": "Theia",
+    "main": "src-gen/frontend/electron-main.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/theia-ide/theia.git"
+    },
+    "theia": {
+        "target": "electron",
+        "backend": {
+            "config": {
+                "startupTimeout": -1
+            }
+        }
+    },
+    "scripts": {
+        "package": "electron-builder",
+        "package:preview": "electron-builder --dir"
+    },
+    "keywords": [],
+    "author": "CutePotatoDev <2453573+CutePotatoDev@users.noreply.github.com>",
+    "dependencies": {
+        "@theia/core": "next",
+        "@theia/electron": "next",
+        "@theia/file-search": "next",
+        "@theia/git": "next",
+        "@theia/json": "next",
+        "@theia/markers": "next",
+        "@theia/merge-conflicts": "next",
+        "@theia/messages": "next",
+        "@theia/preferences": "next",
+        "@theia/search-in-workspace": "next",
+        "@theia/terminal": "next",
+        "@theia/textmate-grammars": "next",
+        "@theia/typescript": "next",
+        "typescript": "latest"
+    },
+    "devDependencies": {
+        "@theia/cli": "next"
+    }
+}
